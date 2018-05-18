@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Early Bird</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="earlybird.css">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+
+    
+    <a href="earlybird2.html"><img src="images/earlybirdlogo.png" class="earlybirdlogo"></a>
+    <!-- Restauranterne er opdelt herunder. Opdelingen er 3 billeder(3 linjers kode) pr Restaurant. -->
+
+
+    <a href="earlybird2.html"><img src="images/earlybirdtoptilbage.png" width="100%" class="topbartilbage"></a>
+    <img src="images/baggrundmellemrum.png" width="100%" class="mellemrumbaggrund">
+
+    
+   <div class="dropdown">
+  <img src="images/burgermenuikon.png" width="28%" class="dropbtn">
+  <div class="dropdown-content">
+    <a href="#">Mine reservationer</a>
+    <a href="#">Om konceptet</a>
+    <a href="#">Restauranterne</a>
+    <a href="#">Gavekort</a>
+    <a href="#">FAQ</a>
+    <a href="#">Nyhedsbrev</a>
+    <a href="#">Indstillinger</a>
+    <a href="#">Kontakt</a>
+      <a href="#"><img src="images/billederdropdown.png" width="60%"></a>
+  </div>
+</div>
+    
+    <img src="images/fbanmeldelser.png" width="40%" class="fbanmeldelser">
+    <p class="fbanmeldelsertekst">4,6 stjerner af 260 anmeldelser på Facebook</p>
+    <a href="https://www.facebook.com/pg/restaurantmellemrum/reviews/?ref=page_internal">
+        <p class="sefbanmeldelser"><b>Se anmeldelser</b></p>
+    </a>
+
+
+    <img src="images/anmeldelser.png" width="40%" class="anmeldelser">
+    <p class="anmeldelsertekst">4 stjerner af 197 anmeldelser på Tripadvisor</p>
+
+    <a href="https://www.tripadvisor.dk/Restaurant_Review-g189530-d816186-Reviews-MellemRum-Aarhus_East_Jutland_Jutland.html">
+        <p class="seanmeldelser"><b>Se anmeldelser</b></p>
+    </a>
+
+    <b><p class="restaurantmellemrum">Restaurant Mellemrum</p></b>
+    <i><p class="femstjernerafjyllandsposten">Fem stjerner i Jyllands-Posten</p></i>
+    <div class="mellemruminfo">
+        På Restaurant MellemRum arbejder vi ud fra værdierne håndværk, hygge & energi! Vores ambitionsniveau er, at give alle vores gæster en god og smagfuld oplevelse, ikke at opnå Michelinstjerner. Vi er en restaurant i Aarhus, der gerne vil lave god mad til prisen. Nogen kalder vores mad for gourmet - vi kalder det for kærlighed til håndværket.
+    </div>
+
+    <div class="menu">
+        <b>Menu (4 retter) </b>
+        <br>
+    </div>
+
+
+
+    <div class="menutekst">
+        <b>Appetizer</b>
+
+        <br> Bagt fjordskrubbe på frikassé af grønne asparges samt dampede & råmarinerede asparges.
+
+        <br><br>
+
+        <b>Forret</b>
+
+        <br> Syltede hvide asparges med sauce hollandaise.
+
+        <br><br>
+
+        <b>Hovedret</b>
+
+        <br> Helstegt dansk Gastro-kalv serveret med croquette af kalvebryst & ramsløg hertil ærter á la francaise, ærtepuré & timiansauce.
+
+        <br><br>
+
+        <b>Dessert</b>
+
+        <br> Marinerede rabarber med hvid chokolade, citrus-sorbet & knas.
+
+    </div>
+
+    <div class="pristekst">
+
+        
+        <p class="pristekstfarve">
+            4-retters menu kr. <u class="kr280">425.-</u>
+            <br>
+            <i>- Rabat 33%</i> <u class="kr280">kr. 145.-</u>
+
+        </p>
+
+
+        <b class="dinearlybirdpris">Din Early Bird pris</b> <b><u class="kr280">kr. 280.-</u></b>
+
+    </div>
+
+    <img src="images/mellemrumbund.png" width="91.2%" class="mellemrumbund">
+
+    <p class="tidspunkt"><b>Tidspunkt</b></p>
+
+    <label class="container">15:30
+  <input type="radio" checked="checked" name="radio">
+  <span class="checkmark"></span>
+    </label>
+
+    <label class="container">16:30
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+    </label>
+
+    <label class="container">17:00
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+    </label>
+
+    <label class="container">17:30
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+    </label>
+
+    <label class="container">18:00
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+    </label>
+    
+     <label class="container">18:30
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+    </label>
+
+    
+    <a href="earlybirdbookogbetal.html"><img src="images/bookogbetalknap.png" width="73%" class="bookogbetalknap"></a>
+
+    <p class="antalpersoner"><b>Antal pers.</b></p>
+
+    <div id="input_div">
+        <input type="text" size="13" value="1" id="count">
+        <input type="button" value="-" id="moins" onclick="minus()">
+        <input type="button" value="+" id="plus" onclick="plus()">
+    </div>
+
+    <p class="antalmenuer"><b>Antal menuer</b></p>
+
+    <div id="input_div">
+        <input type="text" size="13" value="1" id="count1">
+        <input type="button" value="-" id="moins1" onclick="minus()">
+        <input type="button" value="+" id="plus1" onclick="plus()">
+    </div>
+
+    <p class="placering">Restaurant Mellemrum, Fredens Torv 2, 8000 Aarhus</p>
+    
+  
+    
+    <img src="images/pil.png" width="18%" class="pilkort">
+    <div id='map'></div>
+    
+    
+    
+     
+    
+ 
+    
+    <script src="earlybird.js"></script>
+
+    
+</body>
+
+</html>

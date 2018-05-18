@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Early Bird</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="earlybird.css">
+</head>
+
+<body>
+    
+    <a href="earlybird2.html"><img src="images/earlybirdlogo.png" class="earlybirdlogo"></a>
+    
+<a href="earlybirdmellemrum.html"><img src="images/earlybirdtoptilbage.png" width="100%" class="topbartilbage"></a>
+   
+    <img src="images/bookogbetalbaggrund.png" width="100%" class="bookogbetalbaggrund">
+    
+    <b><p class="bookogbetaltekst">Vi er næsten klar til din Early Bird betaling</p></b>
+    
+    <p class="navn">Navn <span>*</span></p>
+    <textarea rows="1" cols="32" class="textarea1"></textarea>
+    
+     <p class="email">E-mail <span>*</span></p>
+    <textarea rows="1" cols="32" class="textarea2"></textarea>
+    
+     <p class="mobil">Mobil <span>*</span></p>
+    <textarea rows="1" cols="32" class="textarea3"></textarea>
+    
+     <p class="gavekortkode">Gavekortkode</p>
+    <textarea rows="1" cols="32" class="textarea4"></textarea>
+    
+     <p class="betalingsform">Vælg betalingsform <span>*</span></p>
+    
+    <img id="mobilepaygraa" src="images/mobilepaygraa.jpg" width="35%" onclick="changeColor()" />
+    <img class="dankort" src="images/dankort.png" width="35%">
+    
+    <a href="earlybirdmobilepay.html"><img src="images/betalknap.png" width="40%" class="betalknap"></a>
+    
+    
+    
+    <script>
+    var image = document.getElementById("mobilepaygraa");
+
+function changeColor() {
+    if (image.getAttribute('src') == "images/mobilepaygraa.jpg") {
+        image.src = "images/mobilepaypink.jpg";
+    } else {
+        image.src = "images/mobilepaygraa.jpg";
+    }
+}
+    </script>
+    
+</body>
+
+</html>
