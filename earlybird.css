@@ -56,9 +56,9 @@ img {
 
 .mellemrumbook {
     position: absolute;
-    z-index: 2;
     right: 40px;
     top: 530px;
+    z-index: 2;
 }
 
 
@@ -135,6 +135,7 @@ img {
 _____________________________
 
 .dropbtn {
+    position: fixed;
     border: none;
     cursor: pointer;
 }
@@ -143,7 +144,7 @@ _____________________________
     position: fixed;
     position: absolute;
     left: 10px;
-    top: -1722px;
+    top: -1712px;
     display: inline-block;
 }
 
@@ -338,6 +339,7 @@ _____________________________
     position: absolute;
     left: 50px;
     top: 1380px;
+    outline: none !important;
 }
 
 
@@ -347,6 +349,7 @@ _____________________________
     top: 1405px;
     color: white;
     background-color: #a21458;
+    outline: none !important;
 }
 
 #plus {
@@ -355,6 +358,7 @@ _____________________________
     top: 1405px;
     color: white;
     background-color: #a21458;
+    outline: none !important;
 }
 
 .antalmenuer {
@@ -370,6 +374,7 @@ _____________________________
     position: absolute;
     left: 50px;
     top: 1490px;
+    outline: none !important;
 }
 
 
@@ -379,6 +384,7 @@ _____________________________
     top: 1515px;
     color: white;
     background-color: #a21458;
+    outline: none !important;
 }
 
 #plus1 {
@@ -387,6 +393,17 @@ _____________________________
     top: 1515px;
     color: white;
     background-color: #a21458;
+    outline: none !important;
+    
+}
+
+.reservation{
+    position: absolute;
+    top: 1300px;
+    left: 180px;
+    font-family: arial;
+    font-size: 25px;
+    color: #555555; 
 }
 
 .tidspunkt {
@@ -420,7 +437,8 @@ _____________________________
     font-weight: bold;
     user-select: none;
     left: 260px;
-    top: -350px;
+    top: -390px;
+    width: 35px;
 }
 
 /* Hide the browser's default radio button */
@@ -555,7 +573,6 @@ textarea {
 }
 
 
-
 .navn {
     position: absolute;
     font-family: arial;
@@ -659,13 +676,20 @@ textarea {
 .betaltop {
     position: absolute;
     position: fixed;
-    z-index: 100;
+    z-index: 11;
 }
 
 .mobilepaybaggrund {
     position: absolute;
     margin-top: 52px;
     z-index: 10;
+}
+
+.tilbagepil{
+    position: absolute;
+    position: fixed;
+    top: 10px;
+    z-index: 100;
 }
 
 .mobilepayswipe {
