@@ -12,14 +12,19 @@
 
 <body>
     
-    <a href="earlybird2.html"><img src="images/earlybirdlogo.png" class="earlybirdlogo"></a>
+    <!-- Følgende tre linjer definerer toppen og baggrunden for siden -->
+    <img src="images/earlybirdlogo.png" class="earlybirdlogo">
     
 <a href="earlybirdmellemrum.html"><img src="images/earlybirdtoptilbage.png" width="100%" class="topbartilbage"></a>
    
     <img src="images/bookogbetalbaggrund.png" width="100%" class="bookogbetalbaggrund">
     
+<!-- _________________________________________________ -->
+
+    
     <b><p class="bookogbetaltekst">Vi er næsten klar til din Early Bird betaling</p></b>
     
+    <!-- De følgende span elementer er de lyserøde stjerner ud fra overskrfterne.-->
     <p class="navn">Navn <span>*</span></p>
     <textarea rows="1" cols="32" class="textarea1"></textarea>
     
@@ -34,13 +39,19 @@
     
      <p class="betalingsform">Vælg betalingsform <span>*</span></p>
     
+    <!-- _________________________________________________ -->
+    
+    
+    
+    <!-- De to følgende billeder er betalingsformen, når man vælger i mellem dankort og mobilepay -->
+    
     <img id="mobilepaygraa" src="images/mobilepaygraa.jpg" width="35%" onclick="changeColor()" />
     <img class="dankort" src="images/dankort.png" width="35%">
     
     <a href="earlybirdmobilepay.html"><img src="images/betalknap.png" width="40%" class="betalknap"></a>
     
     
-    
+    <!-- Der er lagt et script ind her, der tilhører de to ovenstående billeder. Scriptet ligger ikke i den eksterne JS fil, da der er elementer, der vil overskrive dem. -->
     <script>
     var image = document.getElementById("mobilepaygraa");
 

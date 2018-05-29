@@ -8,21 +8,24 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="stylesheet" type="text/css" href="earlybird.css">
+    
+    <!-- De to følgende scripts er eksterne links, der hører til det interaktive mapbox kort -->
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
 </head>
 
 <body>
-
     
+    <!-- Følgende tre linjer definerer den øverste del af siden -->
     <a href="earlybird2.html"><img src="images/earlybirdlogo.png" class="earlybirdlogo"></a>
-    <!-- Restauranterne er opdelt herunder. Opdelingen er 3 billeder(3 linjers kode) pr Restaurant. -->
-
 
     <a href="earlybird2.html"><img src="images/earlybirdtoptilbage.png" width="100%" class="topbartilbage"></a>
+    
     <img src="images/baggrundmellemrum.png" width="100%" class="mellemrumbaggrund">
 
+    <!-- _________________________________________________ -->
     
+    <!-- Herunder defineres dropdownmenuen -->
    <div class="dropdown">
   <img src="images/burgermenuikon.png" width="28%" class="dropbtn">
   <div class="dropdown-content">
@@ -34,26 +37,39 @@
     <a href="#">Nyhedsbrev</a>
     <a href="#">Indstillinger</a>
     <a href="#">Kontakt</a>
-      <a href="#"><img src="images/billederdropdown.png" width="60%"></a>
   </div>
 </div>
     
+    <!-- _________________________________________________ -->
+    
+    <!-- Herunder defineres fb anmeldelserne -->
     <img src="images/fbanmeldelser.png" width="40%" class="fbanmeldelser">
+    
     <p class="fbanmeldelsertekst">4,6 stjerner af 260 anmeldelser på Facebook</p>
-    <a href="https://www.facebook.com/pg/restaurantmellemrum/reviews/?ref=page_internal">
-        <p class="sefbanmeldelser"><b>Se anmeldelser</b></p>
-    </a>
+    
+    <a href="https://www.facebook.com/pg/restaurantmellemrum/reviews/?ref=page_internal" target="_blank">
+        <p class="sefbanmeldelser"><b>Se anmeldelser</b></p> </a>
 
-
+    <!-- _________________________________________________ -->
+    
+      <!-- Herunder defineres tripadvisoranmeldelserne -->
+    
     <img src="images/anmeldelser.png" width="40%" class="anmeldelser">
+    
     <p class="anmeldelsertekst">4 stjerner af 197 anmeldelser på Tripadvisor</p>
 
-    <a href="https://www.tripadvisor.dk/Restaurant_Review-g189530-d816186-Reviews-MellemRum-Aarhus_East_Jutland_Jutland.html">
+    <a href="https://www.tripadvisor.dk/Restaurant_Review-g189530-d816186-Reviews-MellemRum-Aarhus_East_Jutland_Jutland.html" target="_blank">
         <p class="seanmeldelser"><b>Se anmeldelser</b></p>
     </a>
 
+    <!-- _________________________________________________ -->
+    
+      <!-- Herunder defineres informationerne omkring Restaurant MellemRum -->
+    
     <b><p class="restaurantmellemrum">Restaurant Mellemrum</p></b>
+    
     <i><p class="femstjernerafjyllandsposten">Fem stjerner i Jyllands-Posten</p></i>
+    
     <div class="mellemruminfo">
         På Restaurant MellemRum arbejder vi ud fra værdierne håndværk, hygge & energi! Vores ambitionsniveau er, at give alle vores gæster en god og smagfuld oplevelse, ikke at opnå Michelinstjerner. Vi er en restaurant i Aarhus, der gerne vil lave god mad til prisen. Nogen kalder vores mad for gourmet - vi kalder det for kærlighed til håndværket.
     </div>
@@ -62,7 +78,6 @@
         <b>Menu (4 retter) </b>
         <br>
     </div>
-
 
 
     <div class="menutekst">
@@ -104,11 +119,20 @@
         <b class="dinearlybirdpris">Din Early Bird pris</b> <b><u class="kr280">kr. 280.-</u></b>
 
     </div>
+    
+    <!-- _________________________________________________ -->
 
+    
+      <!-- Herunder defineres den nederste den af siden; Reservation, tidspunkt, mapbox m.m.-->
+    
     <img src="images/mellemrumbund.png" width="91.2%" class="mellemrumbund">
+    
+    <p class="reservation"><b>Reservation</b></p>
 
     <p class="tidspunkt"><b>Tidspunkt</b></p>
+    
 
+      <!-- Alle de følgende "labels" er de knapper, der trykkes på når man vælger tidspunkt -->
     <label class="container">15:30
   <input type="radio" checked="checked" name="radio">
   <span class="checkmark"></span>
@@ -138,12 +162,13 @@
   <input type="radio" name="radio">
   <span class="checkmark"></span>
     </label>
-
+<!-- _________________________________________________ -->
     
     <a href="earlybirdbookogbetal.html"><img src="images/bookogbetalknap.png" width="73%" class="bookogbetalknap"></a>
 
     <p class="antalpersoner"><b>Antal pers.</b></p>
 
+      <!-- De to følgende div'er er de to plus- og minustællere  -->
     <div id="input_div">
         <input type="text" size="13" value="1" id="count">
         <input type="button" value="-" id="moins" onclick="minus()">
@@ -154,22 +179,21 @@
 
     <div id="input_div">
         <input type="text" size="13" value="1" id="count1">
-        <input type="button" value="-" id="moins1" onclick="minus()">
-        <input type="button" value="+" id="plus1" onclick="plus()">
+        <input type="button" value="-" id="moins1" onclick="minus1()">
+        <input type="button" value="+" id="plus1" onclick="plus1()">
     </div>
 
+    
     <p class="placering">Restaurant Mellemrum, Fredens Torv 2, 8000 Aarhus</p>
     
   
     
     <img src="images/pil.png" width="18%" class="pilkort">
+    
+    
+      <!-- Denne div er udelukkende tilstede for at vores mapbox fungerer. -->
     <div id='map'></div>
     
-    
-    
-     
-    
- 
     
     <script src="earlybird.js"></script>
 
