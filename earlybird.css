@@ -1,0 +1,690 @@
+/* Browseren nulstilles */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Billeder nulstilles */
+img {
+    border: 0;
+}
+
+.earlybirdlogo {
+    position: absolute;
+    position: fixed;
+    left: 147px;
+    top: 20px;
+    z-index: 100;
+    width: 24%;
+}
+
+
+/* Her starter stylingen til den første side efter forsiden */
+
+/* Topbaren placeres fast i toppen */
+.topbar {
+    position: fixed;
+    z-index: 3;
+}
+
+/* Tilbage-knap i topbaren placeres */
+.topbartilbage {
+    position: fixed;
+    z-index: 30;
+}
+
+/* Knappen til sortering indstilles og placeres */
+.sortering {
+    position: absolute;
+    position: fixed;
+    z-index: 100;
+    left: 320px;
+    top: 9px;
+    height: 6.5%;
+}
+
+
+/* Billederne for Mellemrum rangeres ovenpå i hinanden med position og z-index */
+
+.mellemrum {
+    position: relative;
+    margin-top: 40px;
+}
+
+.mellemrumretter {
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    top: 90px;
+}
+
+.mellemrumbook {
+    position: absolute;
+    right: 40px;
+    top: 530px;
+    z-index: 2;
+}
+
+
+/* Billederne for The Burger Joint rangeres ovenpå i hinanden med position og z-index */
+
+.theburgerjoint {
+    position: relative;
+}
+
+.theburgerjointretter {
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    top: 640px;
+}
+
+.theburgerjointbook {
+    position: absolute;
+    z-index: 2;
+    right: 40px;
+    top: 1100px;
+}
+
+
+/* Billederne for Karma Sushi rangeres ovenpå i hinanden med position og z-index */
+
+.karmasushi {
+    position: relative;
+}
+
+.karmasushiretter {
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    top: 1220px;
+}
+
+.karmasushibook {
+    position: absolute;
+    z-index: 2;
+    right: 40px;
+    top: 1670px;
+}
+
+
+/* Billederne for LeCoq rangeres ovenpå i hinanden med position og z-index */
+
+.lecoq {
+    position: relative;
+}
+
+.lecoqretter {
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    top: 1785px;
+}
+
+.lecoqbook {
+    position: absolute;
+    z-index: 2;
+    right: 40px;
+    top: 2240px;
+}
+
+
+/* Her starter stylingen af siden for Restaurant Mellemrum */
+
+/* Baggrundsbilledet indstilles. Margin er til for at gøre plads til topbaren */
+.mellemrumbaggrund {
+    z-index: -2;
+    margin-top: 58px;
+}
+
+_____________________________
+
+/* Dropdownmenuen, der kun eksemplificeres på en enkelt side, styles her */
+.dropbtn {
+    position: fixed;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown img {
+    position: fixed;
+    width: 11.5%;
+    top: 12px;
+}
+
+
+.dropdown {
+    position: fixed;
+    left: 10px;
+    top: -1712px;
+    display: inline-block;
+    position: relative;
+    z-index: 100;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    max-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 105;
+}
+
+.dropdown-content a {
+    color: #555555;
+    font-family: arial;
+    font-size: 13px;
+    line-height: 1.3;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+_____________________________ 
+
+
+/* Information om FB anmeldelser styles her */
+.fbanmeldelser{
+    position: absolute;
+    margin-right: 5%;
+    z-index: 10;
+    right: 95px;
+    top: 450px;
+}
+
+.fbanmeldelser{
+    position: absolute;
+    margin-right: 5%;
+    z-index: 10;
+    right: 95px;
+    top: 450px;
+}
+
+.fbanmeldelsertekst {
+    position: absolute;
+    color: #a1a1a1;
+    font-family: arial;
+    font-size: 10px;
+    top: 480px;
+    left: 90px;
+    width: 80%;
+}
+
+.sefbanmeldelser {
+    position: absolute;
+    color: #555555;
+    font-family: arial;
+    font-size: 10px;
+    top: 494px;
+    left: 149px;
+    width: 80%;
+}
+
+/* Restaurant informationer styles her */
+.restaurantmellemrum {
+    position: absolute;
+    font-family: arial;
+    font-size: 16px;
+    color: #555555;
+    top: 540px;
+    left: 50px;
+}
+
+.femstjernerafjyllandsposten {
+    position: absolute;
+    font-family: arial;
+    font-size: 7px;
+    color: #555555;
+    top: 570px;
+    left: 50px;
+}
+
+.mellemruminfo {
+    position: absolute;
+    color: #a1a1a1;
+    font-family: arial;
+    font-size: 10px;
+    top: 600px;
+    left: 50px;
+    width: 75%;
+    line-height: 1.3;
+}
+
+/* Tripadvisor anmeldelser styles her */
+.anmeldelser {
+    position: absolute;
+    margin-right: 5%;
+    z-index: 10;
+    right: 95px;
+    top: 720px;
+}
+
+.anmeldelsertekst {
+    position: absolute;
+    color: #a1a1a1;
+    font-family: arial;
+    font-size: 10px;
+    top: 750px;
+    left: 90px;
+    width: 80%;
+}
+
+.seanmeldelser {
+    position: absolute;
+    color: #555555;
+    font-family: arial;
+    font-size: 10px;
+    top: 764px;
+    left: 149px;
+    width: 80%;
+}
+
+/* Den menu, man kan få ved Mellerum, styles her */
+.menu {
+    position: absolute;
+    font-family: arial;
+    font-size: 13px;
+    color: #555555;
+    top: 830px;
+    left: 50px;
+}
+
+.menutekst {
+    position: absolute;
+    color: #a1a1a1;
+    font-family: arial;
+    font-size: 10px;
+    top: 860px;
+    left: 50px;
+    width: 75%;
+    line-height: 1.3;
+}
+
+.pristekst {
+    position: absolute;
+    font-family: arial;
+    font-size: 10px;
+    top: 1080px;
+    left: 50px;
+    color: #555555;
+    width: 85%;
+    line-height: 1.3;
+}
+
+.pristekstfarve {
+    color: #a1a1a1;
+    font-family: arial;
+    font-size: 9px;
+}
+
+.kr280 {
+    float: right;
+    margin-right: 55px;
+}
+
+
+/* Her placeres det nederste baggrundsbillede (Reservation, tidspunkt osv.)*/
+.mellemrumbund {
+    position: absolute;
+    top: 1200px;
+    left: 17px;
+}
+
+
+.antalpersoner {
+    position: absolute;
+    left: 50px;
+    top: 1350px;
+    font-family: arial;
+    font-size: 13px;
+    color: #555555;
+}
+
+/* De følgende 3 id'er er den øverste af de to tællefunktioner, der styles. */
+#count {
+    position: absolute;
+    left: 50px;
+    top: 1380px;
+    outline: none !important;
+}
+
+
+#moins {
+    position: absolute;
+    left: 55px;
+    top: 1405px;
+    color: white;
+    background-color: #a21458;
+    outline: none !important;
+}
+
+#plus {
+    position: absolute;
+    left: 90px;
+    top: 1405px;
+    color: white;
+    background-color: #a21458;
+    outline: none !important;
+}
+
+.antalmenuer {
+    position: absolute;
+    left: 50px;
+    top: 1460px;
+    font-family: arial;
+    font-size: 13px;
+    color: #555555;
+}
+
+/* De følgende 3 id'er er den nederste tællefunktion, der styles */
+#count1 {
+    position: absolute;
+    left: 50px;
+    top: 1490px;
+    outline: none !important;
+}
+
+
+#moins1 {
+    position: absolute;
+    left: 55px;
+    top: 1515px;
+    color: white;
+    background-color: #a21458;
+    outline: none !important;
+}
+
+#plus1 {
+    position: absolute;
+    left: 90px;
+    top: 1515px;
+    color: white;
+    background-color: #a21458;
+    outline: none !important;
+    
+}
+
+.reservation{
+    position: absolute;
+    top: 1300px;
+    left: 180px;
+    font-family: arial;
+    font-size: 25px;
+    color: #555555; 
+}
+
+.tidspunkt {
+    position: absolute;
+    top: 1350px;
+    left: 260px;
+    font-family: arial;
+    font-size: 13px;
+    color: #555555;
+}
+
+
+.bookogbetalknap {
+    position: absolute;
+    top: 1560px;
+    left: 50px;
+}
+
+
+/* Her starter stylingen af tidspunkterne, man kan vælge */
+.container {
+    display: block;
+    position: relative;
+    margin-right: 200px;
+    padding-left: 20px;
+    margin-bottom: 11.5px;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: arial;
+    color: #555555;
+    font-weight: bold;
+    user-select: none;
+    left: 260px;
+    top: -365px;
+    width: 35px;
+}
+
+/* Her skjules standard knappen for den anvendte type knap */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Her laves en ny knap, der passer til vores design*/
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 12px;
+    width: 12px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+
+/* Mouse-over effekt, der giver en mørkegrå farve */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* Her sættes den farve, der kommer frem, når man har valgt tidspunkt */
+.container input:checked ~ .checkmark {
+    background-color: #a21458;
+}
+/* Her slutter stylingen af tidspunkterne, man kan vælge */
+
+
+.placering {
+    position: absolute;
+    font-family: arial;
+    font-size: 10px;
+    color: #555555;
+    top: 1652px;
+    left: 68px;
+}
+
+.pilkort {
+    position: absolute;
+    top: 1698px;
+    left: 155px;
+    border-radius: 3px;
+    z-index: 10;
+}
+
+/* Her starter stylingen af det interaktive map */
+#map {
+    position: absolute;
+    top: 1700px;
+    width: 92%;
+    height: 350px;
+    margin-left: 4%;
+}
+
+
+/* Her starter styling af siden "book og betal" */
+
+.bookogbetalbaggrund {
+    margin-top: 60px;
+    margin-bottom: -10;
+}
+
+/* Her styles farven på de lyserøde stjerne efter overskrifterne */
+span {
+    color: #b9156d;
+}
+
+.bookogbetaltekst {
+    position: absolute;
+    top: 100px;
+    font-family: arial;
+    font-size: 20px;
+    color: #555555;
+    left: 50px;
+    width: 60%;
+}
+
+/* De følgende textarea tags styles her */
+textarea {
+    font-family: arial;
+    font-size: 14px;
+    color: #555555;
+    outline: none !important;
+}
+
+
+.navn {
+    position: absolute;
+    font-family: arial;
+    font-size: 16px;
+    color: #555555;
+    left: 50px;
+    top: 180px;
+    font-weight: bold;
+}
+
+.textarea1 {
+    position: absolute;
+    left: 50px;
+    top: 215px;
+    border-radius: 4px;
+}
+
+
+
+.email {
+    position: absolute;
+    font-family: arial;
+    font-size: 16px;
+    color: #555555;
+    left: 50px;
+    top: 260px;
+    font-weight: bold;
+}
+
+.textarea2 {
+    position: absolute;
+    left: 50px;
+    top: 295px;
+    border-radius: 4px;
+}
+
+
+.mobil {
+    position: absolute;
+    font-family: arial;
+    font-size: 16px;
+    color: #555555;
+    left: 50px;
+    top: 340px;
+    font-weight: bold;
+}
+
+.textarea3 {
+    position: absolute;
+    left: 50px;
+    top: 375px;
+    border-radius: 4px;
+}
+
+
+.gavekortkode {
+    position: absolute;
+    font-family: arial;
+    font-size: 16px;
+    color: #555555;
+    left: 50px;
+    top: 420px;
+    font-weight: bold;
+}
+
+.textarea4 {
+    position: absolute;
+    left: 50px;
+    top: 455px;
+    border-radius: 4px;
+}
+
+.betalingsform {
+    position: absolute;
+    font-family: arial;
+    font-size: 16px;
+    color: #555555;
+    left: 50px;
+    top: 515px;
+    font-weight: bold;
+}
+
+/* Mobilpay- og dankortikon styles */
+#mobilepaygraa {
+    position: absolute;
+    left: 50px;
+    top: 555px;
+}
+
+.dankort {
+    position: absolute;
+    left: 50px;
+    top: 635px;
+}
+
+.betalknap {
+    position: absolute;
+    left: 180px;
+    top: 735px;
+}
+
+/* Her starter styling for siden "Betal" */
+
+/*Topbare og baggrundsbillede placeres*/
+.betaltop {
+    position: absolute;
+    position: fixed;
+    z-index: 11;
+}
+
+.mobilepaybaggrund {
+    position: absolute;
+    margin-top: 52px;
+    z-index: 10;
+}
+
+.tilbagepil{
+    position: absolute;
+    position: fixed;
+    top: 10px;
+    z-index: 100;
+}
+
+.mobilepayswipe {
+    position: absolute;
+    left: 25px;
+    top: 550px;
+    z-index: 15;
+}
+
+.kvittering {
+    margin-top: -10px;
+}
